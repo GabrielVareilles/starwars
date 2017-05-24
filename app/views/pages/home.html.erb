@@ -1,2 +1,6 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Starwars</h1>
+
+
+<% @planets.each do |planet|%>
+  <%= link_to planet[0], pages_planet_path(url: planet[1])%> <br>
+<% end %>
